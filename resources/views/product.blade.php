@@ -24,13 +24,13 @@
     </div>
     <br>
     <div class="w3-margin-top w3-container w3-center">
-        <h1><?= $product->title ?></h1>
+        <h1>{{ $product->title }}</h1>
         <div>
-            <?= $product->body ?>
+            {!! $product->body !!}
         </div>
+        <a href="/">Go Back</a>
     </div>
 
-    <a href="/">Go Back</a>
 
 
     <!-- Contact Section -->
