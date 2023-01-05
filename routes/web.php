@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Products;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('home', [
+        'products' => Products::all()
+    ]);
 });
+
+Route::get('products/{product}', function ($slug) {
+    return view('product', [
+        'product' => Products::find($slug)
+    ]);
+})->where('post', '[A-z_\-]+');

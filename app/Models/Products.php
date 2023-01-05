@@ -5,7 +5,8 @@ namespace App\Models;
 use Illuminate\Support\Facades\File;
 use Spatie\YamlFrontMatter\YamlFrontMatter;
 
-class Products {
+class Products
+{
     public $title;
 
     public $excerpt;
@@ -13,10 +14,11 @@ class Products {
     public $order;
 
     public $body;
-    
+
     public $slug;
 
-    public function __construct($title, $excerpt, $order, $body, $slug) {
+    public function __construct($title, $excerpt, $order, $body, $slug)
+    {
         $this->title = $title;
         $this->excerpt = $excerpt;
         $this->order = $order;
@@ -24,19 +26,23 @@ class Products {
         $this->slug = $slug;
     }
 
-    public static function all() {
-        return cache()->rememberForever('goods.all', function () {
+    public static function all()
+    {
+        // return cache()->rememberForever('goods.all', function () {
             return collect(File::files(resource_path("products")))
-            ->map(fn ($file) => YamlFrontMatter::parseFile($file))
-            ->map(fn ($documents) => new Products(
-                $document->title,
-                $document->excerpt,
-                $document->order,
-                $document->body(),
-                $document->slug,
-            ))
-            ->sortBy('order')
-        });
-
+                ->map(fn ($file) => YamlFrontMatter::parseFile($file))
+                ->map(fn ($document) => new Products(
+                    $document->title,
+                    $document->excerpt,
+                    $document->order,
+                    $document->body(),
+                    $document->slug,
+                ))
+                ->sortBy('order');
     }
+
+    public static function find($slug) 
+        {
+            return static::all()->firstWhere('slug', $slug);
+        }
 }

@@ -63,6 +63,18 @@
       </div>
     </div>
   </div>
+  <?php foreach ($products as $product) : ?>
+  <div class="w3-container w3-center">
+    <h1>
+        <a href="/products/<?=$product->slug; ?>">
+            <?=$product->title ?>
+        </a>
+        <div>
+            <?= $product->excerpt ?>
+        </div>
+    </h1>
+  </div>
+  <?php endforeach; ?>
 
   <!-- About Section -->
   <div class="w3-container w3-padding-32" id="about">
