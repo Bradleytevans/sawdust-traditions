@@ -18,13 +18,16 @@ class Products
 
     public $slug;
 
-    public function __construct($title, $excerpt, $order, $body, $slug)
+    public $img;
+
+    public function __construct($title, $excerpt, $order, $body, $slug, $img)
     {
         $this->title = $title;
         $this->excerpt = $excerpt;
         $this->order = $order;
         $this->body = $body;
         $this->slug = $slug;
+        $this->img = $img;
     }
 
     public static function all()
@@ -38,6 +41,7 @@ class Products
                 $document->order,
                 $document->body(),
                 $document->slug,
+                $document->img
             ))
             ->sortBy('order');
     }

@@ -1,8 +1,5 @@
     <!-- Header -->
-    <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-        <img class="w3-image" src="/w3images/architect.jpg" alt="Architecture" width="1500" height="800">
-        <div class="w3-display-middle w3-margin-top w3-center">
-            <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>BR</b></span> <span
-                    class="w3-hide-small w3-text-light-grey">Architects</span></h1>
-        </div>
+    <header class="bg-fixed " style="background-image: url({{asset('images/wood.jpg')}})" class="half-w-full h-auto">
+        <h1 class="p-10 font-serif text-6xl text-center text-yellow-100">Welcome to Sawdust Traditions!</h1>
+        <h2 class="p-10 font-serif text-4xl text-center text-violet-50">A family-owned woodworking business.</h2>;
     </header>

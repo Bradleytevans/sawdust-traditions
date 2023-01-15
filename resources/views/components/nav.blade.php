@@ -1,12 +1,20 @@
     <!-- Navbar (sit on top) -->
-    <div class="w3-top">
-        <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-            <a href="/" class="w3-bar-item w3-button">Sawdust Traditions</a>
-            <!-- Float links to the right. Hide them on small screens -->
-            <div class="w3-right w3-hide-small">
-                <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-                <a href="#about" class="w3-bar-item w3-button">About</a>
-                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-            </div>
-        </div>
+    <div class="flex items-center justify-between flex-wrap bg-orange-100 p-2 px-8 shadow-inner">
+        <span class="font-bold text-xl tracking-tight text-yellow-600 font-serif">
+            <a href="/">Sawdust Traditions</a>
+        </span>
+        <nav>
+            <a href="/" class="font-serif mt-4 inline lg:mt-0 text-lg text-yellow-600 hover:text-white mr-4">
+                Home
+            </a>
+            <a href="#responsive-header" class="font-serif mt-4 inline lg:mt-0 text-lg text-yellow-600 hover:text-white mr-4">
+                Gallery
+            </a>
+            <a href="#responsive-header" class="font-serif mt-4 inline lg:mt-0 text-lg text-yellow-600 hover:text-white mr-4">
+                Contact
+            </a>
+            <a href="#responsive-header" class="font-serif mt-4 inline lg:mt-0 text-lg text-yellow-600 hover:text-white">
+                Shop
+            </a>
+        </nav>
     </div>

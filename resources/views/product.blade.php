@@ -3,8 +3,9 @@
     <br>
     <x-header></x-header>
     <br>
-    <div class="w3-margin-top w3-container w3-center">
+    <div class="border-solid border-4 border-black">
         <h1>{{ $product->title }}</h1>
+        <img src="{{ asset($product->img) }}"  class="h-full w-full  object-center group-hover:opacity-75">
         <div>
             {!! $product->body !!}
         </div>
