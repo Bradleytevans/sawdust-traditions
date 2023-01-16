@@ -1,7 +1,7 @@
 <div class="bg-black text-white bg-opacity-70 md:flex">
     <div class="flex-1 pt-10 pb-10 px-10 xl:mx-24">
         <h4
-            class="bg-opacity-60 text-semibold text-3xl pb-4 text-gray-900 bg-white pt-4 w-1/2 m-auto rounded-tl-3xl rounded-br-3xl">
+            class="shadow-md shadow-gray-500 bg-opacity-60 text-semibold text-3xl pb-4 text-gray-900 bg-white pt-4 w-1/2 m-auto rounded-tl-3xl rounded-br-3xl">
             What We
             Do</h4>
         <p class="mt-7 mb-15 text-gray-200">
@@ -17,12 +17,12 @@
         </p>
         <br>
         <div class="flex">
-            <p class="w-1/5 bg-opacity-60 pb-4 text-gray-900 bg-white pt-4  m-auto rounded-tl-3xl rounded-br-3xl">Custom Furniture</p>
-            <p class="w-1/5 bg-opacity-60 pb-4 text-gray-900 bg-white pt-4  m-auto rounded-tl-3xl rounded-br-3xl">Project
+            <p class="shadow-md shadow-gray-500 w-1/5 bg-opacity-60 pb-4 text-gray-900 bg-white pt-4  m-auto rounded-tl-3xl rounded-br-3xl">Custom Furniture</p>
+            <p class="shadow-md shadow-gray-500 w-1/5 bg-opacity-60 pb-4 text-gray-900 bg-white pt-4  m-auto rounded-tl-3xl rounded-br-3xl">Project
                 Consultations</p>
-            <p class="w-1/5 bg-opacity-60 pb-4 text-gray-900 bg-white pt-4  m-auto rounded-tl-3xl rounded-br-3xl">Quality
+            <p class="shadow-md shadow-gray-500 w-1/5 bg-opacity-60 pb-4 text-gray-900 bg-white pt-4  m-auto rounded-tl-3xl rounded-br-3xl">Quality
                 Home Goods</p>
-            <p class="w-1/5 bg-opacity-60 pb-4 text-gray-900 bg-white pt-4  m-auto rounded-tl-3xl rounded-br-3xl">Hand-Crafted Products</p>
+            <p class="shadow-md shadow-gray-500 w-1/5 bg-opacity-60 pb-4 text-gray-900 bg-white pt-4  m-auto rounded-tl-3xl rounded-br-3xl">Hand-Crafted Products</p>
         </div>
     </div>
     <div class="flex-1  sm:m-auto ">
