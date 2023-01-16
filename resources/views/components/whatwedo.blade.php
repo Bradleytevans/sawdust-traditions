@@ -13,6 +13,7 @@
             Phillip's meticulous eye and attention to detail means each item is as much a work of art as it is a piece
             of
             furniture.
+            Have an idea? <a href="/" class="underline hover:text-gray-900">Contact</a> us and we will bring it to life!
         </p>
         <br>
         <div class="flex">
@@ -25,6 +26,6 @@
         </div>
     </div>
     <div class="flex-1  sm:m-auto ">
-        <img src="{{ asset('images/drill.jpg') }}" class=" rounded-tl-3xl rounded-br-3xl">
+        <img src="{{ asset('images/drill.jpg') }}" class=" rounded-tl-3xl rounded-br-3xl my-6">
     </div>
 </div>
