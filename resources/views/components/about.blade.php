@@ -1,54 +1,45 @@
-        <div class="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
-            <h3 class="font-bold text-4xl  underline mb-2">From our family to yours.</h4>
-                <div class="flex flex-col lg:flex-row justify-between gap-8">
-                    <div class="w-full lg:w-5/12 flex flex-col justify-center">
-                        <h1 class="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 dark:text-white pb-4">
-                            Experience & History</h1>
-                        <p class="font-normal text-base leading-6 text-gray-600 dark:text-white">Sawdust Traditions is a
-                            family-owned business Phillip has more than 40+ years of experience in
-                            construction, carpentry, and welding. His father, William (Bill) Evans, was the owner of a
-                            construction company that specialized in building houses, churches, and businesses. Having
-                            tagged
-                            along on most of Bill's jobs, he learned the trade and has passed on these skills to his own
-                            sons.</p>
-                    </div>
-                   
-                    <div class="w-full lg:w-8/12 lg:pt-8">
-                        <div href="#" class="flex flex-col items-center bg-white border rounded-lg shadow-md md:flex-row md:max-w-xxl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                            <img class="object-cover w-full rounded-t-lg h-96 md:h-60 md:w-48 md:rounded-none md:rounded-l-lg" src="{{asset('images/Phillip.jpg')}}" alt="">
-                            <div class="flex flex-col justify-between p-4 m-auto leading-normal">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Phillip Evans</h5>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">The man, the myth, the legend.</p>
-                            </div>
-                        </div>
-                        <div href="#" class="flex flex-col items-center bg-white border rounded-lg shadow-md md:flex-row md:max-w-xxl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                            <img class="object-cover w-full rounded-t-lg h-96 md:h-60 md:w-48 md:rounded-none md:rounded-l-lg" src="{{asset('images/Jennifer.jpg')}}" alt="">
-                            <div class="flex flex-col justify-between p-4 m-auto leading-normal">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Jennifer Evans</h5>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">BAMF.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<div class="bg-black bg-opacity-70 flex text-gray-200 pt-2">
+    <div class=" w-1/2 ml-20 py-14 px-20">
+        <h1
+            class="align-middle shadow-md shadow-black bg-opacity-60 text-semibold text-3xl my-10 py-7 text-gray-900 bg-white m-auto rounded-tl-3xl rounded-br-3xl">
+            Experience & History
+        </h1>
+        <p class="shadow-black shadow-md bg-black bg-opacity-30 rounded-tl-3xl rounded-br-3xl p-3">
+            Phillip Evans has more than 40+ years of experience in construction, carpentry, and welding. His father,
+            William (Bill) Evans, was the owner of a construction company that specialized in building houses, churches,
+            and businesses. Having tagged along on most of Bill's jobs, he learned the trade and has passed on these
+            skills to his own sons.
+        </p>
 
-                <div class="flex lg:flex-row flex-col justify-between gap-8 pt-12">
-                    <div class="w-full lg:w-5/12 flex flex-col justify-center">
-                        <h1 class="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 dark:text-white pb-4">Process
-                        </h1>
-                        <p class="font-normal text-base leading-6 text-gray-600 dark:text-white">
-                            Each piece is created
-                            with the customer at heart. Whether it is a table, bed frame, bookshelf, or
-                            elevated dog bowls, we aim to please. Individual and personalized consultations are held
-                            over the
-                            phone, via email, or in-person to understand the customer's vision and bring it to life. If
-                            you are
-                            interested in a consultation, please submit the custom quote form and we will contact you to
-                            discuss
-                            your order.</p>
-                    </div>
-                    <div class="w-full lg:w-8/12">
-                        <img class="w-full h-full shadow-lg rounded-md" src="{{asset('images/horses.jpg')}}"
-                            alt="A group of People" />
-                    </div>
-                </div>
+        <div class="flex justify-between">
+            <img src="{{ asset('images/evans2.png') }}" alt=""
+                class="rounded-lg mt-10 mr-2 shadow-black shadow-lg w-1/2">
+            <img src="{{ asset('images/evans1.png') }}" alt=""
+                class="rounded-lg mt-10 ml-2 shadow-black shadow-lg w-1/2">
         </div>
+    </div>
+    <div class=" w-1/2 mr-20 py-14 px-20 ">
+        <h1
+            class="align-middle shadow-md shadow-black bg-opacity-60 text-semibold text-3xl my-10 py-7 text-gray-900 bg-white m-auto rounded-tl-3xl rounded-br-3xl">
+            Our Process
+        </h1>
+        <p class="shadow-black shadow-md bg-black bg-opacity-30 rounded-tl-3xl rounded-br-3xl p-3">
+            Each piece is created with the customer at heart. Whether it is a table, bed frame, bookshelf, or elevated
+            dog bowls, Sawdust Traditions aims to please. Individual and personalized consultations are held over the
+            phone, via email, or in-person to understand the customer's vision and bring it to life. If you are
+            interested in a consultation, please submit the custom quote form and we will contact you to discuss your
+            idea.
+        </p>
+        <div class="flex justify-between">
+            <div class="">
+                <img src="{{ asset('images/phill2.png') }}" alt=""
+                    class="rounded-lg mt-10 shadow-black shadow-lg h-2/5">
+                <img src="{{ asset('images/phill1.png') }}" alt=""
+                    class="rounded-lg mt-12 shadow-black shadow-lg h-2/5">
+            </div>
+
+            <img src="{{ asset('images/phillip4.jpg') }}" alt=""
+                class="rounded-lg mt-10 shadow-black shadow-lg w-1/2 h-1/3">
+        </div>
+    </div>
+</div>
