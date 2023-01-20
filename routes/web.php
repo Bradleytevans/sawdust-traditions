@@ -39,3 +39,8 @@ Route::get('/gallery', function () {
         'products' => Product::all()
     ]);
 });
+Route::get('/gallery/{product}', function ($id) {
+    return view('product', [
+        'product' => Product::findOrFail($id)
+    ]);
+});
