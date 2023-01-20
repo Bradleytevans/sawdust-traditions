@@ -15,14 +15,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home', [
-        'products' => Products::all()
-    ]);
+    return view('home');
 });
 
 
-Route::get('products/{product}', function ($slug) {
-    return view('product', [
-        'product' => Products::findOrFail($slug)
-    ]);
+Route::get('/products/furniture', function () {
+    return view('furniture');
+});
+
+Route::get('/products/kitchen-goods', function () {
+    return view('kitchen-goods');
+});
+
+Route::get('/products/miscellaneous', function () {
+    return view('miscellaneous');
+});
+
+Route::get('/products/pet-products', function () {
+    return view('pet-products');
 });
