@@ -1,4 +1,4 @@
-<div class="bg-black bg-opacity-70 flex text-gray-200 pt-2 pb-14">
+<div class="bg-black bg-opacity-70 flex text-gray-200 pt-2 pb-14 shadow-black shadow-md">
     <div class=" w-1/2 ml-20 py-14 px-20">
         <h1
             class="align-middle shadow-md shadow-black bg-opacity-60 text-semibold text-3xl my-10 py-7 text-gray-900 bg-white m-auto rounded-tl-3xl rounded-br-3xl">
