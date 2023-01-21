@@ -8,7 +8,7 @@
             <a href="/" class="shadow-lg shadow-black bg-opacity-40 bg-black hover:bg-opacity-70 hover:bg-gray-500 hover:text-gray-200 text-gray-300 font-semibold px-2 py-1  rounded mr-5">
                 Home
             </a>
-            <a href="#responsive-header"
+            <a href="/gallery"
                 class="shadow-lg shadow-black bg-opacity-40 bg-black hover:bg-opacity-70 hover:bg-gray-500 hover:text-gray-200 text-gray-300 font-semibold px-2 py-1  rounded mr-5">
                 Gallery
             </a>

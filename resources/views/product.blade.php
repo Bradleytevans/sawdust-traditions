@@ -7,6 +7,6 @@
         {{ $product->excerpt }}
     </div>
     <div>
-        {{ $product->body }}
+        <p>{!! $product->body !!}</p>
     </div>
 </article>
