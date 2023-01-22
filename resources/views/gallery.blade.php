@@ -5,7 +5,9 @@
                 {{ $product->title}}
                 </a>
             </h1>
-
+            <p>
+                <a href="">{{ $product->category->name }}</a>
+            </p>
             <div>
                 {{ $product->excerpt }}
             </div>
