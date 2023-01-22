@@ -1,7 +1,7 @@
     @foreach ($products as $product)
         <article>
             <h1>
-                <a href="/gallery/{{ $product->id }}">
+                <a href="/gallery/{{ $product->slug }}">
                 {{ $product->title}}
                 </a>
             </h1>
