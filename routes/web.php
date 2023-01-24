@@ -3,7 +3,6 @@
 use App\Models\Category;
 use App\Models\Product;
 use App\Models\User;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -39,7 +38,7 @@ Route::get('products/pet-products', function () {
 // Gallery
 Route::get('gallery', function () {
     return view('gallery', [
-        'products' => Product::latest()->with('category', 'author')->get()
+        'products' => Product::latest()->get()
     ]);
 });
 Route::get('gallery/{product:slug}', function (Product $product) {

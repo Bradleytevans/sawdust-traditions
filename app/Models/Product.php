@@ -7,10 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
+    use HasFactory;
 
     protected $guarded = [];
 
-    use HasFactory;
+    protected $with = ['category', 'author'];
 
     public function category()
     {
