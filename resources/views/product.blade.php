@@ -3,7 +3,7 @@
         {{ $product->title }}
     </h1>
     <p>
-        By <a href="">{{ $product->user->name}}</a>
+        By <a href="/authors/{{ $product->author->username }}">{{ $product->author->name}}</a>
     </p>
     <p>
         category: <a href="/categories/{{ $product->category->slug }}">{{ $product->category->name }}</a>
