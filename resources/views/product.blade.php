@@ -1,13 +1,15 @@
 <article>
     <h1>
-        {{ $product->title}}
-            <a href="/categories/{{ $product->category->slug }}">{{ $product->category->name }}</a>
+        {{ $product->title }}
     </h1>
-
+    <p>
+        By <a href="">{{ $product->user->name}}</a>
+    </p>
+    <p>
+        category: <a href="/categories/{{ $product->category->slug }}">{{ $product->category->name }}</a>
+    </p>
     <div>
-        {{ $product->excerpt }}
+       <p> body: {!! $product->body !!} lore</p>
     </div>
-    <div>
-        <p>{!! $product->body !!}</p>
-    </div>
+    <p><a href="/gallery">Gallery</a></p>
 </article>
