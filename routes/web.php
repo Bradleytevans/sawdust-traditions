@@ -1,8 +1,6 @@
 <?php
 
-use App\Models\Category;
-use App\Models\Product;
-use App\Models\User;
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,44 +15,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Home
-Route::get('/', function () {
-    return view('home');
-});
-
-// Products
-Route::get('products/furniture', function () {
-    return view('furniture');
-});
-Route::get('products/kitchen-goods', function () {
-    return view('kitchen-goods');
-});
-Route::get('products/miscellaneous', function () {
-    return view('miscellaneous');
-});
-Route::get('products/pet-products', function () {
-    return view('pet-products');
-});
+Route::get('/', [PostController::class, 'index']);
 
 // Gallery
-Route::get('gallery', function () {
-    return view('gallery', [
-        'products' => Product::latest()->get(),
-        'category' => Category::all()
-    ]);
-});
-Route::get('gallery/{product:slug}', function (Product $product) {
-    return view('product', [
-        'product' => $product
-    ]);
-});
-Route::get('categories/{category:slug}', function (Category $category) {
-    return view('gallery', [
-        'products' => $category->products,
-        'category' => Category::all()
-    ]);
-});
-Route::get('authors/{author:username}', function (User $author) {
-    return view('gallery', [
-        'products' => $author->products
-    ]);
-});
+Route::get('gallery', [PostController::class, 'gallery']);
+
+Route::get('gallery/{product:slug}', [PostController::class, 'product']);
+
+Route::get('categories/{category:slug}', [PostController::class, 'category']);
