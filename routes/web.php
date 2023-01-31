@@ -38,7 +38,8 @@ Route::get('products/pet-products', function () {
 // Gallery
 Route::get('gallery', function () {
     return view('gallery', [
-        'products' => Product::latest()->get()
+        'products' => Product::latest()->get(),
+        'category' => Category::all()
     ]);
 });
 Route::get('gallery/{product:slug}', function (Product $product) {
@@ -48,7 +49,8 @@ Route::get('gallery/{product:slug}', function (Product $product) {
 });
 Route::get('categories/{category:slug}', function (Category $category) {
     return view('gallery', [
-        'products' => $category->products
+        'products' => $category->products,
+        'category' => Category::all()
     ]);
 });
 Route::get('authors/{author:username}', function (User $author) {

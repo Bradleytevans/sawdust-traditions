@@ -1,19 +1,14 @@
-<p><a href="/gallery">Gallery</a></p>
-@foreach ($products as $product)
-    <article>
-        <h1>
-            <a href="/gallery/{{ $product->slug }}">
-                {{ $product->title }}
-            </a>
-        </h1>
-        <p>
-            By <a href="/authors/{{ $product->author->username }}">{{ $product->author->name }}</a>
-        </p>
-        <p>
-            <a href="/categories/{{ $product->category->slug }}">{{ $product->category->name }}</a>
-        </p>
-        <div>
-            {{ $product->excerpt }}
-        </div>
-    </article>
-@endforeach
+<x-layout>
+    <x-nav></x-nav>
+    <x-gallery-header></x-gallery-header>
+
+    <main
+        class=" mx-auto mt-6 max-w-6xl space-y-6 lg:mt-12">
+        @if ($products->count())
+            <x-gallery-grid :products="$products"></x-gallery-grid>
+        @else
+            <p class="text-center">No products yet please check back.</p>
+        @endif
+    </main>
+    <x-footer></x-footer>
+</x-layout>
