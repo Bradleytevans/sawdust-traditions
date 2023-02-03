@@ -10,7 +10,7 @@
         <div class="flex-1 mt-8 flex flex-col justify-between">
             <header>
                 <div class="space-x-2">
-                    <a href="/categories/{{ $product->category->slug }}"
+                    <a href="/gallery/categories/{{ $product->category->slug }}"
                         class="rounded-full border border-blue-300 px-3 py-1 text-xs font-semibold uppercase text-blue-300"
                         style="font-size: 10px">{{ $product->category->name }}
                     </a>

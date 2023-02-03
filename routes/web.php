@@ -22,4 +22,4 @@ Route::get('gallery', [PostController::class, 'gallery']);
 
 Route::get('gallery/{product:slug}', [PostController::class, 'product']);
 
-Route::get('categories/{category:slug}', [PostController::class, 'category']);
+Route::get('gallery/categories/{category:slug}', [PostController::class, 'category']);
