@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Clockwork\Storage\Search;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -12,6 +13,13 @@ class Product extends Model
     protected $guarded = [];
 
     protected $with = ['category', 'author'];
+
+    public function scopeFilter($query, array $filters) {
+        $query->when($filters['search'] ?? false, fn($query, $search)=>
+        $query
+        ->where('title', 'like', '%' . $search . '%')
+        ->orWhere('body', 'like', '%' . $search . '%'));
+    }
 
     public function category()
     {

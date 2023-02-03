@@ -18,7 +18,7 @@ class PostController extends Controller
     public function gallery()
     {
         return view('gallery', [
-            'products' => Product::latest()->get(),
+            'products' => Product::latest()->filter(request(['search']))->get(),
             'category' => Category::all()
         ]);
     }
