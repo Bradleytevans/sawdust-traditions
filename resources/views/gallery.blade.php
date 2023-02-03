@@ -1,7 +1,6 @@
 <x-layout>
     <x-nav></x-nav>
-    <x-gallery-header></x-gallery-header>
-
+    <x-gallery-header :categories="$categories"></x-gallery-header>
     <main
         class=" mx-auto mt-6 max-w-6xl space-y-6 lg:mt-12">
         @if ($products->count())

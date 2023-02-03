@@ -6,7 +6,7 @@
         By <a href="/authors/{{ $product->author->username }}">{{ $product->author->name}}</a>
     </p>
     <p>
-        category: <a href="/categories/{{ $product->category->slug }}">{{ $product->category->name }}</a>
+        category: <a href="/category/{{ $product->category->slug }}">{{ $product->category->name }}</a>
     </p>
     <div>
        <p> body: {!! $product->body !!} lore</p>

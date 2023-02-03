@@ -12,14 +12,14 @@ class PostController extends Controller
     public function index()
     {
         return view('home', [
-            'category' => Category::all()
+            'categories' => Category::all()
         ]);
     }
     public function gallery()
     {
         return view('gallery', [
             'products' => Product::latest()->filter(request(['search']))->get(),
-            'category' => Category::all()
+            'categories' => Category::all()
         ]);
     }
 
@@ -30,11 +30,12 @@ class PostController extends Controller
         ]);
     }
 
-    public function category(Category $category)
+    public function categories(Category $category)
     {
         return view('gallery', [
             'products' => $category->products,
-            'category' => Category::all()
+            'currentCategory' => $category,
+            'categories' => Category::all()
         ]);
     }
 }
