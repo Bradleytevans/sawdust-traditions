@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use App\Models\Product;
-use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
@@ -18,8 +17,9 @@ class PostController extends Controller
     public function gallery()
     {
         return view('gallery', [
-            'products' => Product::latest()->filter(request(['search']))->get(),
-            'categories' => Category::all()
+            'products' => Product::latest()->filter(request(['search', 'category']))->get(),
+            'categories' => Category::all(),
+            'currentCategory' => Category::firstWhere('slug', request('category')),
         ]);
     }
 
@@ -27,15 +27,6 @@ class PostController extends Controller
     {
         return view('product', [
             'product' => $product
-        ]);
-    }
-
-    public function categories(Category $category)
-    {
-        return view('gallery', [
-            'products' => $category->products,
-            'currentCategory' => $category,
-            'categories' => Category::all()
         ]);
     }
 }

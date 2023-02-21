@@ -1,7 +1,7 @@
 <header class="mx-auto mt-20 max-w text-center">
     <h1 class="text-6xl my-12 text-violet-50"><a href="/gallery">Gallery</a></h1>
 
-    <div class="mt-4 space-y-2 lg:space-y-0 lg:space-x-4 mb-20">
+    <div class="mt-4 space-y-2 lg:space-y-0 lg:space-x-4 mb-28">
         <!--  Category -->
         <div
             class="bg-black bg-opacity-50 text-sm font-semibold text-center text-violet-50 shadow-black shadow-md rounded-2xl relative  lg:inline-flex">
@@ -18,7 +18,8 @@
                     All
                 </x-dropdown-item>
                 @foreach ($categories as $category)
-                    <x-dropdown-item href="/category/{{ $category->slug }}" :active="isset($currentCategory) && $currentCategory->is($category)">
+                    <x-dropdown-item href="/gallery/?category={{ $category->slug }}"
+                        :active="isset($currentCategory) && $currentCategory->is($category)">
                         {{ ucwords($category->name) }}
                     </x-dropdown-item>
                 @endforeach
