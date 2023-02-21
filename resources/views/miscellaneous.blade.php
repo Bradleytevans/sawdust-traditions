@@ -1,1 +1,0 @@
-<x-products></x-products>
