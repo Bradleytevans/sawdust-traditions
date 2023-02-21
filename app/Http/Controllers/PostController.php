@@ -18,7 +18,6 @@ class PostController extends Controller
     {
         return view('gallery', [
             'products' => Product::latest()->filter(request(['search', 'category']))->get(),
-            'currentCategory' => Category::firstWhere('slug', request('category')),
         ]);
     }
 
