@@ -3,43 +3,53 @@
     <x-gallery-header></x-gallery-header>
     <x-layout>
 
-        <main class="mx-auto mt-10 max-w-7xl space-y-6 lg:mt-20">
-            <div>
-                <a href="/"
-                    class="inline-flex items-center px-3 bg-black bg-opacity-50 text-lg font-semibold text-center text-violet-50 shadow-black shadow-md rounded-2xl relative  lg:inline-flex">
-                    <i class="fa-sharp fa-solid fa-arrow-left pr-2"></i>
+        <div>
+            <a href="/"
+                class="inline-flex items-center px-3 bg-black bg-opacity-50 text-lg font-semibold text-center text-violet-50 shadow-black shadow-md rounded-2xl relative  lg:inline-flex">
+                <i class="fa-sharp fa-solid fa-arrow-left pr-2"></i>
 
-                     Back to Products
-                </a>
+                Back to Products
+            </a>
+        </div>
+
+
+        <main
+            class="mx-auto my-10 max-w-7xl space-y-6 lg:my-20 bg-black bg-opacity-70 text-gray-200 pt-2 shadow-black shadow-md rounded-tl-3xl rounded-br-3xl">
+            <div class="py-6 px-5 flex gap-x-4">
+                <div class="flex-1">
+                    <img src="/images/drill.jpg" alt="Blog Post illustration" class="rounded-xl mx-auto">
+                </div>
+
+                <div class="flex-1 flex flex-col grid-rows-6 justify-start align-middle gap-y-10">
+                    <header>
+                        <div class="mt-4">
+                            <h1 class="text-3xl">
+                                <a href="/gallery/{{ $product->slug }}">
+                                    {{ ucwords($product->title) }}
+                                </a>
+                            </h1>
+                        </div>
+
+                        <div class="space-x-2">
+                            <a href="/gallery/?category={{ $product->category->slug }}"
+                                class="rounded-full border border-blue-300 px-3 py-1 text-xs font-semibold uppercase text-blue-300"
+                                style="font-size: 10px">{{ $product->category->name }}
+                            </a>
+                        </div>
+
+                        <div>
+                            <span class="mt-2 block text-sm text-gray-400">
+                                Published <time>{{ $product->created_at->diffForHumans() }}</time>
+                            </span>
+                        </div>
+                    </header>
+
+                    <div class="mt-4 text-lg space-y-4 mx-6">
+                        {!! $product->body !!}
+                    </div>
+
+                </div>
             </div>
-            <article
-                class="mx-auto max-w-6xl gap-x-10 lg:grid lg:grid-cols-12 bg-black bg-opacity-70 text-gray-200 pt-2 shadow-black shadow-md rounded-tl-3xl rounded-br-3xl">
-
-                <div class="col-start-2 col-end-8 mb-10 lg:pt-1r4 lg:text-center">
-                    <img src="/images/drill.jpg" alt="" class="rounded-xl">
-
-                    <p class="mt-4 block text-xs text-gray-400">
-                        Published <time>{{ $product->created_at->diffForHumans() }}</time>
-                    </p>
-                </div>
-
-                <div class="col-span-4">
-                    <div class="mb-6 hidden justify-start lg:flex">
-
-
-                    </div>
-
-                    <h1 class="mb-10 text-3xl font-bold lg:text-4xl">
-                        {{ ucwords($product->title) }}
-                    </h1>
-
-                    <div class="space-y-4 leading-loose lg:text-lg space-y-4">
-                        <p>
-                            {!! $product->body !!}
-                        </p>
-                    </div>
-                </div>
-            </article>
         </main>
 
     </x-layout>
