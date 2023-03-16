@@ -4,7 +4,7 @@
     <x-layout>
 
         <div>
-            <a href="/"
+            <a href="/gallery"
                 class="inline-flex items-center px-3 bg-black bg-opacity-50 text-lg font-semibold text-center text-violet-50 shadow-black shadow-md rounded-2xl relative  lg:inline-flex">
                 <i class="fa-sharp fa-solid fa-arrow-left pr-2"></i>
 
