@@ -3,9 +3,19 @@
     <x-gallery-header></x-gallery-header>
     <x-layout>
 
-        <main class="mx-auto mt-10 max-w-6xl space-y-6 lg:mt-20">
-            <article class="mx-auto max-w-6xl gap-x-10 lg:grid lg:grid-cols-12">
-                <div class="col-span-6 mb-10 lg:pt-14 lg:text-center">
+        <main class="mx-auto mt-10 max-w-7xl space-y-6 lg:mt-20">
+            <div>
+                <a href="/"
+                    class="inline-flex items-center px-3 bg-black bg-opacity-50 text-lg font-semibold text-center text-violet-50 shadow-black shadow-md rounded-2xl relative  lg:inline-flex">
+                    <i class="fa-sharp fa-solid fa-arrow-left pr-2"></i>
+
+                     Back to Products
+                </a>
+            </div>
+            <article
+                class="mx-auto max-w-6xl gap-x-10 lg:grid lg:grid-cols-12 bg-black bg-opacity-70 text-gray-200 pt-2 shadow-black shadow-md rounded-tl-3xl rounded-br-3xl">
+
+                <div class="col-start-2 col-end-8 mb-10 lg:pt-1r4 lg:text-center">
                     <img src="/images/drill.jpg" alt="" class="rounded-xl">
 
                     <p class="mt-4 block text-xs text-gray-400">
@@ -13,22 +23,9 @@
                     </p>
                 </div>
 
-                <div class="col-span-6">
-                    <div class="mb-6 hidden justify-between lg:flex">
-                        <a href="/"
-                            class="relative inline-flex items-center text-lg transition-colors duration-300 hover:text-blue-500">
-                            <svg width="22" height="22" viewBox="0 0 22 22" class="mr-2">
-                                <g fill="none" fill-rule="evenodd">
-                                    <path stroke="#000" stroke-opacity=".012" stroke-width=".5" d="M21 1v20.16H.84V1z">
-                                    </path>
-                                    <path class="fill-current"
-                                        d="M13.854 7.224l-3.847 3.856 3.847 3.856-1.184 1.184-5.04-5.04 5.04-5.04z">
-                                    </path>
-                                </g>
-                            </svg>
+                <div class="col-span-4">
+                    <div class="mb-6 hidden justify-start lg:flex">
 
-                            Back to Posts
-                        </a>
 
                     </div>
 
@@ -46,5 +43,6 @@
         </main>
 
     </x-layout>
+    <x-footer></x-footer>
 
 </x-layout>
