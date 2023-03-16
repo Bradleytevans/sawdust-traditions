@@ -23,7 +23,7 @@ class PostController extends Controller
 
     public function product(Product $product)
     {
-        return view('product', [
+        return view('home.product', [
             'product' => $product
         ]);
     }
