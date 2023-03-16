@@ -44,10 +44,13 @@
                         </div>
                     </header>
 
-                    <div class="mt-4 text-lg space-y-4 mx-6">
+                    <div class="my-4 text-lg mx-6">
                         {!! $product->body !!}
                     </div>
 
+                    <div class="mt-10">
+                        <a href="/" class="bg-black p-3 bg-opacity-70 rounded-lg shadow-md shadow-black">Get your custom piece now!</a>
+                    </div>
                 </div>
             </div>
         </main>
