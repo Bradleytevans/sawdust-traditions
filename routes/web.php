@@ -23,3 +23,6 @@ Route::get('gallery', [PostController::class, 'gallery']);
 Route::get('gallery/{product:slug}', [PostController::class, 'product']);
 
 Route::get('gallery/category/{category:slug}', [PostController::class, 'categories'])->name('categories');
+
+Route::get('/contact', 'ContactController@show');
+Route::post('/contact', 'ContactController@sendEmail');
