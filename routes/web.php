@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,5 +25,5 @@ Route::get('gallery/{product:slug}', [PostController::class, 'product']);
 
 Route::get('gallery/category/{category:slug}', [PostController::class, 'categories'])->name('categories');
 
-Route::get('/contact', 'ContactController@show');
-Route::post('/contact', 'ContactController@sendEmail');
+Route::get('/contact', [ContactController::class, 'show']);
+Route::post('/contact', [ContactController::class, 'sendEmail']);
