@@ -14,7 +14,7 @@
 
 
         <main
-            class="mx-auto my-10 max-w-7xl space-y-6 lg:my-20 bg-black bg-opacity-70 text-gray-200 pt-2 shadow-black shadow-md rounded-tl-3xl rounded-br-3xl">
+            class="mx-auto my-10 max-w-7xl space-y-6 lg:my-20 bg-black bg-opacity-70 text-gray-200 pt-2 shadow-black shadow-md rounded-3xl">
             <div class="py-6 px-5 flex gap-x-4">
                 <div class="flex-1">
                     <img src="/images/drill.jpg" alt="Blog Post illustration" class="rounded-xl mx-auto">
