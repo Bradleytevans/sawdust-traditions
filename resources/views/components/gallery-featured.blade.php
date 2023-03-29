@@ -33,13 +33,7 @@
                     {!! $product->excerpt !!}
             </div>
 
-            <footer class="mt-8 flex items-center justify-between">
-                <div class="flex items-center text-sm">
-                    <div class="ml-3">
-                        <h5 class="font-bold">{{ $product->author->name }}</h5>
-                    </div>
-                </div>
-
+            <footer class="mt-8 items-center justify-between">
                 <div>
                     <a href="/gallery/{{ $product->slug }}"
                         class="shadow-md shadow-black bg-opacity-70 bg-white hover:bg-opacity-70 hover:bg-gray-800 hover:text-gray-200 text-gray-800 font-semibold px-2 py-1 border border-gray-400 rounded">Read
