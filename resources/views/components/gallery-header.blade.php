@@ -4,17 +4,17 @@
     <div class="mt-4 space-y-2 lg:space-y-0 lg:space-x-4 mb-14">
         <!--  Category -->
         <div
-            class="bg-black bg-opacity-50 text-sm font-semibold text-center text-violet-50 shadow-black shadow-md rounded-2xl relative  lg:inline-flex">
+            class="bg-black bg-opacity-50 text-sm font-semibold text-center text-violet-50 shadow-black shadow-md rounded-xl relative  lg:inline-flex">
             <x-category-dropdown></x-category-dropdown>
         </div>
 
 
-
+        <!-- Search -->
         <div
             class="relative flex items-center lg:inline-flex rounded-2xl text-violet-50 px-2">
             <form method="GET" action="#">
                 <input type="text" name="search" placeholder="Find something..."
-                    class="bg-black bg-opacity-50 text-sm font-semibold placeholder-black focus:ring-transparent border-none !outline-none focus:border-none text-center placeholder:text-violet-50 shadow-black shadow-md rounded-2xl"
+                    class="bg-black bg-opacity-50 text-sm font-semibold placeholder-black focus:ring-transparent border-none !outline-none focus:border-none text-center placeholder:text-violet-50 shadow-black shadow-md rounded-xl"
                     value="{{ request('search') }}">
             </form>
         </div>

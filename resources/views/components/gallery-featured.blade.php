@@ -1,7 +1,7 @@
 @props(['product'])
 
 <article
-    {{ $attributes->merge(['class' => "bg-black bg-opacity-70 text-gray-200 pt-2 shadow-black shadow-md rounded-tl-3xl rounded-br-3xl"]) }}>
+    {{ $attributes->merge(['class' => "bg-black bg-opacity-70 text-gray-200 pt-2 shadow-black shadow-md rounded-3xl"]) }}>
     <div class="py-6 px-5 flex">
         <div class="flex-1">
             <img src="/images/drill.jpg" alt="Blog Post illustration" class="rounded-xl mx-auto">
