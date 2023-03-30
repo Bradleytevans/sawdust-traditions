@@ -25,5 +25,3 @@ Route::get('gallery/{product:slug}', [PostController::class, 'product']);
 
 Route::get('gallery/category/{category:slug}', [PostController::class, 'categories'])->name('categories');
 
-Route::get('/contact', [ContactController::class, 'show']);
-Route::post('/contact', [ContactController::class, 'sendEmail']);
