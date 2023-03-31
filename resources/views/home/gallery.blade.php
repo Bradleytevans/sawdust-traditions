@@ -5,6 +5,8 @@
         class=" mx-auto max-w-6xl space-y-6 lg:mt-14">
         @if ($products->count())
             <x-gallery-grid :products="$products"></x-gallery-grid>
+
+            {{ $products->links() }}
         @else
             <p class="text-center">No products yet please check back.</p>
         @endif
