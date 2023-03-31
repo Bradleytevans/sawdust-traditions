@@ -2,7 +2,7 @@
     <x-nav></x-nav>
     <x-gallery-header></x-gallery-header>
     <main
-        class=" mx-auto mt-6 max-w-6xl space-y-6 lg:mt-12">
+        class=" mx-auto max-w-6xl space-y-6 lg:mt-14">
         @if ($products->count())
             <x-gallery-grid :products="$products"></x-gallery-grid>
         @else
