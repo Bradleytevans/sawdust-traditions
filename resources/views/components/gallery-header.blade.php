@@ -12,7 +12,10 @@
         <!-- Search -->
         <div
             class="relative flex items-center lg:inline-flex rounded-2xl text-violet-50 px-2">
-            <form method="GET" action="#">
+            <form method="GET" action="/gallery/">
+                @if (request('category'))
+                    <input type="hidden" name="category" value="{{ request('category') }}">
+                @endif
                 <input type="text" name="search" placeholder="Find something..."
                     class="bg-black bg-opacity-50 text-sm font-semibold placeholder-black focus:ring-transparent border-none !outline-none focus:border-none text-center placeholder:text-violet-50 shadow-black shadow-md rounded-xl"
                     value="{{ request('search') }}">
