@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\PostController;
-use App\Http\Controllers\ContactController;
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,6 +20,11 @@ Route::get('/', [PostController::class, 'index']);
 
 // Gallery
 Route::get('gallery', [PostController::class, 'gallery']);
+
+// Gallery Admin
+Route::get('gallery/admin', [AdminController::class, 'index']);
+Route::post('gallery/admin', [AdminController::class, 'store']);
+
 
 Route::get('gallery/{product:slug}', [PostController::class, 'product']);
 
