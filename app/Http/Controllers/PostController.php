@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\HomeProducts;
 use App\Models\Product;
 
 class PostController extends Controller
@@ -11,7 +12,7 @@ class PostController extends Controller
     public function index()
     {
         return view('home.index', [
-            'categories' => Category::all()
+            'products' => HomeProducts::all()
         ]);
     }
     public function gallery()
