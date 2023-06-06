@@ -10,7 +10,7 @@
             skills to his own sons.
         </p>
 
-        <div class="flex justify-between">
+        <div class="flex justify-center">
             <img src="{{ asset('images/evans2.png') }}" alt="" class="rounded-lg mt-10 mr-2 shadow-black shadow-lg w-1/2">
             <img src="{{ asset('images/evans1.png') }}" alt="" class="rounded-lg mt-10 ml-2 shadow-black shadow-lg w-1/2">
         </div>
