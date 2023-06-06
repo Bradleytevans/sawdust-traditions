@@ -1,29 +1,31 @@
     <!-- Footer -->
     <footer>
-        <h2
-            class="shadow-md shadow-black text-xl text-center  bg-gray-200 bg-opacity-80 w-1/4 rounded-xl mx-auto mt-10 mb-10 p-4">
+        <h2 class="shadow-md shadow-black text-xl text-center bg-gray-200 bg-opacity-80 w-10/12 rounded-xl mx-auto mt-10 mb-8 p-2">
             From our family to yours!
         </h2>
         <div class="flex mb-10 items-top justify-center text-gray-200">
-            <img src="{{ asset('images/evansfam.png') }}" alt=""
-                class="rounded-lg  shadow-black shadow-lg mx-20 h-64">
-            <div >
-                <h3 class="underline mb-4 text-3xl bg-black bg-opacity-60 shadow-md shadow-black rounded-xl p-4">
-                    Contact Us
-                </h3>
-                <div class="bg-black bg-opacity-60 shadow-md shadow-black rounded-xl px-8 py-6">
+            <img src="{{ asset('images/evansfam.png') }}" alt="" class="rounded-lg  shadow-black shadow-lg mx-5 h-20">
+            <div>
+                <div class="lg:hidden bg-black bg-opacity-60 shadow-md shadow-black rounded-xl px-2 py-1 text-md">
+                    <!-- Content for small screens (less than LG breakpoint) -->
+                    <p class="grid grid-col-1">
+                        <i class="fa-solid fa-envelope"></i> <a href="mailto: Sawdusttraditions@gmail.com">Email</a>
+                    </p>
+                    <p class="grid grid-col-1">
+                        <i class="fa-brands fa-square-facebook"></i> <a href="">Facebook</a>
+                    </p>
+                </div>
+
+                <div class="hidden lg:block bg-black bg-opacity-60 shadow-md shadow-black rounded-xl px-2 py-1 text-md">
+                    <!-- Content for large screens (LG breakpoint and above) -->
                     <p>
-                        <i class="fa-solid fa-envelope"></i> <a href = "mailto: Sawdusttraditions@gmail.com">Send Email</a>
+                        <i class="fa-solid fa-envelope"></i> <a href="mailto: Sawdusttraditions@gmail.com">Email</a>
                     </p>
                     <p>
-                        <a href=""><i class="fa-brands fa-square-facebook"></i> Facebook</a>
-                    </p>
-                    <p>
-                        <i class="fa-solid fa-square-phone"></i> Phone
+                        <i class="fa-brands fa-square-facebook"></i> <a href="">Facebook</a>
                     </p>
                 </div>
             </div>
-            <img src="{{ asset('images/sawdust.png') }}" alt=""
-                class="rounded-lg  shadow-black shadow-lg h-64 mx-20">
+            <img src="{{ asset('images/sawdust.png') }}" alt="" class="rounded-lg shadow-black shadow-lg mx-5 h-20">
         </div>
     </footer>
