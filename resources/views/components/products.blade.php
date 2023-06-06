@@ -1,6 +1,6 @@
 <div class="bg-opacity-0">
-    <div class="mx-auto max-w-2xl py-4 px-4 lg:max-w-7xl lg:px-8  mb-16">
-        <h3 class=" shadow-md shadow-black text-2xl text-center  bg-gray-200 bg-opacity-70 w-5/6 mx-auto  rounded-3xl mt-10 mb-20 p-6">
+    <div class="mx-auto max-w-2xl p-2 lg:max-w-7xl lg:px-8 mb-16">
+        <h3 class=" shadow-md shadow-black text-2xl text-center  bg-gray-200 bg-opacity-70 w-5/6 mx-auto rounded-3xl mt-10 mb-12 p-6">
             Products</h3>
         <div class=" grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-12">
             @foreach ($products as $product)

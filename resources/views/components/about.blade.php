@@ -1,5 +1,5 @@
-<div class="bg-black bg-opacity-70 flex text-gray-200 shadow-black shadow-md grid grid-cols-1">
-    <div class="w-5/6 py-2 px-2 mx-auto">
+<div class="bg-black bg-opacity-70 text-gray-200 shadow-black shadow-md">
+    <div class="w-5/6 py-2 px-2 mx-auto ">
         <h1 class="align-middle shadow-md shadow-black bg-opacity-60 text-semibold text-2xl my-10 py-7 text-gray-900 bg-white m-auto rounded-3xl">
             Experience & History
         </h1>
@@ -26,7 +26,7 @@
             interested in a consultation, please submit the custom quote form and we will contact you to discuss your
             idea.
         </p>
-        <div class="flex justify-between mb-8">
+        <div class="flex justify-center mb-8">
             <div>
                 <img src="{{ asset('images/phill2.png') }}" alt="" class="rounded-lg mt-10 shadow-black shadow-lg h-2/5">
                 <img src="{{ asset('images/phill1.png') }}" alt="" class="rounded-lg mt-9 shadow-black shadow-lg h-2/5">
