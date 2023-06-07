@@ -9,7 +9,7 @@
 
 
         <!-- Search -->
-        <div class="flex items-center justify-center">
+        <div class="flex items-center justify-center text-violet-50">
             <form method="GET" action="/gallery/" class="relative">
                 @if (request('category'))
                 <input type="hidden" name="category" value="{{ request('category') }}">
