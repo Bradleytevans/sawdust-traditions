@@ -11,7 +11,7 @@
                         <a href="mailto: Sawdusttraditions@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
                     </p>
                     <p class="">
-                        <a href=""><i class="fa-brands fa-square-facebook"></i>Facebook</a>
+                        <a href="https://www.facebook.com/sawdusttraditions/"><i class="fa-brands fa-square-facebook"></i>Facebook</a>
                     </p>
                 </div>
             </div>

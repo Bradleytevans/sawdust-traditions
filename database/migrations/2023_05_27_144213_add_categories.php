@@ -15,10 +15,9 @@ return new class extends Migration
     public function up()
     {
         Category::create([
-            'name' => 'furniture',
+            'name' => 'Furniture',
             'slug' => 'furniture'
         ]);
-
     }
 
     /**
