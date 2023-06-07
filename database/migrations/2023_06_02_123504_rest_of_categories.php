@@ -15,11 +15,11 @@ return new class extends Migration
     public function up()
     {
         Category::create([
-            'name' => 'kitchen_goods',
+            'name' => 'Kitchen Goods',
             'slug' => 'kitchen_goods'
         ]);
         Category::create([
-            'name' => 'pet_products',
+            'name' => 'Pet Products',
             'slug' => 'pet_products'
         ]);
         Category::create([
