@@ -2,7 +2,7 @@
 
 <x-dropdown>
     <x-slot name="trigger">
-        <button class="inline-flex w-full flex-1 bg-transparent py-1 px-12 text-lg font-semibold text-center mx-auto items-center justify-center">
+        <button class="inline-flex w-full flex-1 bg-transparent py-1 px-2 text-lg font-semibold text-center mx-auto items-center justify-center">
             {{ isset($currentCategory) ? ucwords($currentCategory->name) : 'Categories'}}
             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" class="ml-2"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                 <style>
