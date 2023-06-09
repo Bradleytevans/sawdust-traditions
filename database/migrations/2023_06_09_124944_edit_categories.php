@@ -14,17 +14,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Category::create([
-            'name' => 'kitchen_goods',
-            'slug' => 'kitchen_goods'
-        ]);
-        Category::create([
-            'name' => 'pet_products',
-            'slug' => 'pet_products'
-        ]);
-        Category::create([
-            'name' => 'misc',
-            'slug' => 'misc'
+        Category::where('name', 'kitchen_goods')->update(['name' => 'Kitchen Goods']);
+        Category::where('name', 'pet-products')->update(['name' => 'Pet Products']);
+        Category::where('name', 'misc')->update([
+            'name' => 'miscellaneous',
+            'slug' => 'miscellaneous'
         ]);
     }
 
