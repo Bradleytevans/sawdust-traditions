@@ -15,7 +15,7 @@ return new class extends Migration
     public function up()
     {
         Category::where('name', 'kitchen_goods')->update(['name' => 'Kitchen Goods']);
-        Category::where('name', 'pet-products')->update(['name' => 'Pet Products']);
+        Category::where('name', 'pet_products')->update(['name' => 'Pet Products']);
         Category::where('name', 'misc')->update([
             'name' => 'miscellaneous',
             'slug' => 'miscellaneous'
