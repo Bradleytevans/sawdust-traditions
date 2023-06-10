@@ -12,7 +12,7 @@ class PostController extends Controller
     public function index()
     {
         return view('home.index', [
-            'products' => HomeProducts::all()
+            'homeProducts' => HomeProducts::all()
         ]);
     }
     public function gallery()

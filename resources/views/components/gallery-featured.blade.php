@@ -3,7 +3,7 @@
 <article {{ $attributes->merge(['class' => "bg-black bg-opacity-70 text-gray-200 pt-2 shadow-black shadow-md rounded-3xl hidden lg:block"]) }}>
     <div class="py-6 px-5 flex">
         <div class="flex-1">
-            <img src="/images/drill.jpg" alt="Blog Post illustration" class="rounded-xl mx-auto">
+            <img src="/images/{{ $product->slug }}.jpg" alt="Blog Post illustration" class="rounded-xl mx-auto bg-black bg-opacity-50">
         </div>
 
         <div class="flex-1 mt-8 flex flex-col justify-between">
@@ -43,13 +43,13 @@
 <article {{ $attributes->merge(['class' => 'bg-black bg-opacity-70 text-gray-200 pt-2 mb-6 shadow-black shadow-md rounded-2xl lg:hidden']) }}>
     <div class="py-6 px-5">
         <div class="">
-            <img src="/images/drill.jpg" alt="Blog Post illustration" class="rounded-xl mx-auto">
+            <img src="/images/{{ $product->slug }}.jpg" alt="Blog Post illustration" class="rounded-xl mx-auto bg-black bg-opacity-50">
         </div>
 
         <div class="mt-8 flex flex-col justify-end">
             <header>
                 <div class="space-x-2">
-                    <a href="/gallery/?category={{ $product->category->slug }}" class="rounded-full border border-blue-300 px-3 py-1 text-xs font-semibold uppercase text-blue-300" style="font-size: 10px">{{ $product->category->name }}
+                    <a href="/gallery/?category={{ $product->category->slug }}" class="rounded-full border border-gray-300 px-3 py-1 text-xs font-semibold uppercase text-gray-300" style="font-size: 10px">{{ $product->category->name }}
                     </a>
                 </div>
 

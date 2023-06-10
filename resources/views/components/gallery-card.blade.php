@@ -1,18 +1,15 @@
 @props(['product'])
 
-<article
-    {{ $attributes->merge(['class' => 'bg-black bg-opacity-70 text-gray-200 pt-2 mb-6 shadow-black shadow-md rounded-2xl']) }}>
+<article {{ $attributes->merge(['class' => 'bg-black bg-opacity-70 text-gray-200 pt-2 mb-6 shadow-black shadow-md rounded-2xl']) }}>
     <div class="py-6 px-5">
         <div class="">
-            <img src="/images/drill.jpg" alt="Blog Post illustration" class="rounded-xl mx-auto">
+            <img src="/images/{{ $product->slug }}.jpg" alt="Blog Post illustration" class="rounded-xl mx-auto">
         </div>
 
         <div class="mt-8 flex flex-col justify-end">
             <header>
                 <div class="space-x-2">
-                    <a href="/gallery/?category={{ $product->category->slug }}"
-                        class="rounded-full border border-blue-300 px-3 py-1 text-xs font-semibold uppercase text-blue-300"
-                        style="font-size: 10px">{{ $product->category->name }}
+                    <a href="/gallery/?category={{ $product->category->slug }}" class="rounded-full border border-gray-300 px-3 py-1 text-xs font-semibold uppercase text-gray-300" style="font-size: 10px">{{ $product->category->name }}
                     </a>
                 </div>
 
@@ -35,8 +32,7 @@
 
             <footer class="mt-8 items-center justify-between">
                 <div>
-                    <a href="/gallery/{{ $product->slug }}"
-                        class="shadow-md shadow-black bg-opacity-70 bg-white hover:bg-opacity-70 hover:bg-gray-800 hover:text-gray-200 text-gray-800 font-semibold px-2 py-1 border border-gray-400 rounded">Read
+                    <a href="/gallery/{{ $product->slug }}" class="shadow-md shadow-black bg-opacity-70 bg-white hover:bg-opacity-70 hover:bg-gray-800 hover:text-gray-200 text-gray-800 font-semibold px-2 py-1 border border-gray-400 rounded">Read
                         More</a>
                 </div>
             </footer>

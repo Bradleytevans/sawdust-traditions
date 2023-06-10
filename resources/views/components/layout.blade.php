@@ -12,8 +12,7 @@
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
-<body style="background-image: url({{ asset('images/wood.jpg') }})"
-    class="bg-fixed text-center font-serif font-semibold text-xl">
+<body style="background-image: url({{ asset('images/wood.jpg') }})" class="bg-fixed text-center font-serif font-semibold text-xl">
     {{ $slot }}
 </body>
 
