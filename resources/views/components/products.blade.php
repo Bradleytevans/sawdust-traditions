@@ -7,7 +7,7 @@
             <a href="/gallery/?category={{ $product->slug }}" class="">
                 <div class=" hover:bg-opacity-70 hover:text-gray-200  hover:bg-gray-800  shadow-md shadow-black aspect-w-1 mx-auto aspect-h-1 w-5/6 overflow-hidden rounded-3xl bg-gray-200  bg-opacity-80">
                     <h3 class="mt-4 text-2xl hover:text-gray-200 text-gray-900 pb-3">{{ $product->name}}</h3>
-                    <img src="{{ asset('images/' . $product->slug . '.jpg') }}" class="h-full w-full  object-center group-hover:opacity-75">
+                    <img src="{{ asset('images/' . $product->slug . '.png') }}" class="h-full w-full  object-center group-hover:opacity-75">
                 </div>
             </a>
             @endforeach
