@@ -7,6 +7,6 @@
             Sawdust Traditions is a family-owned woodworking company founded by Phillip and Jennifer Evans. They are committed to producing high-quality, durable wood products at affordable prices. Every item is meticulously handcrafted, tailored to the client's vision, and combines artistic beauty with functional furniture.
             Have an idea? <a href="/" class="underline hover:text-gray-900">Contact</a> us and we will bring it to life!
         </p>
-        <img src="{{ asset('images/showcase.jpg') }}" class="mx-auto mb-10 shadow-lg rounded-3xl shadow-black h-1/5">
+        <img src="{{ asset('images/showcase.jpg') }}" class="mx-auto mb-10 shadow-lg rounded-3xl shadow-black">
     </div>
 </div>
