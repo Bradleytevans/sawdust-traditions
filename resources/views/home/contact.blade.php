@@ -1,21 +1,21 @@
 <x-layout>
   <x-nav></x-nav>
-  <h1 class="text-white text-3xl my-10">Contact us about your custom piece!</h1>
-  <form action="https://usebasin.com/f/f09ceef67374" method="POST" enctype="multipart/form-data" id="form" class="bg-black opacity-70 px-8 pt-6 pb-8 mb-4 max-w-3xl mx-auto rounded-3xl shadow-md shadow-black w-5/6">
+  <h1 class="my-10 text-3xl text-white lg:text-4xl">Contact us about your custom piece!</h1>
+  <form action="https://usebasin.com/f/f09ceef67374" method="POST" enctype="multipart/form-data" id="form" class="w-5/6 max-w-3xl px-8 pt-6 pb-8 mx-auto mb-4 bg-black shadow-md opacity-70 rounded-3xl shadow-black">
     <div class="mb-4">
-      <label class="block font-bold mb-2 text-white" for="name">Name</label>
-      <input class="shadow-md rounded-xl appearance-none border w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline text-black" id="name" type="text" name="name" placeholder="Name" />
+      <label class="block mb-2 font-bold text-white" for="name">Name</label>
+      <input class="w-full px-3 py-2 leading-tight text-black border shadow-md appearance-none rounded-xl focus:outline-none focus:shadow-outline" id="name" type="text" name="name" placeholder="Name" />
     </div>
     <div class="mb-4">
-      <label class="block font-bold mb-2 text-white" for="email">Email</label>
-      <input class="shadow-md rounded-xl appearance-none border w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline text-black" id="email" type="email" name="email" placeholder="Email" required />
+      <label class="block mb-2 font-bold text-white" for="email">Email</label>
+      <input class="w-full px-3 py-2 leading-tight text-black border shadow-md appearance-none rounded-xl focus:outline-none focus:shadow-outline" id="email" type="email" name="email" placeholder="Email" required />
     </div>
     <div class="mb-4">
-      <label class="block font-bold mb-2 text-white" for="message">Message</label>
-      <textarea class="shadow-md rounded-xl appearance-none border w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline text-black" name="message" placeholder="Message"></textarea>
+      <label class="block mb-2 font-bold text-white" for="message">Message</label>
+      <textarea class="w-full px-3 py-2 leading-tight text-black border shadow-md appearance-none rounded-xl focus:outline-none focus:shadow-outline" name="message" placeholder="Message"></textarea>
     </div>
     <div class="flex items-center justify-center">
-      <button class="shadow-md shadow-black bg-opacity-70 bg-white hover:bg-opacity-70 hover:bg-gray-800 hover:text-gray-200 text-gray-900 font-semibold border border-gray-400 rounded px-6 py-2" type="submit">Send</button>
+      <button class="px-6 py-2 font-semibold text-gray-900 bg-white border border-gray-400 rounded shadow-md shadow-black bg-opacity-70 hover:bg-opacity-70 hover:bg-gray-800 hover:text-gray-200" type="submit">Send</button>
     </div>
   </form>
   <x-footer></x-footer>

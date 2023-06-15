@@ -11,8 +11,8 @@
         </p>
 
         <div class="flex justify-center gap-2">
-            <img src="{{ asset('images/evans2.png') }}" alt="" class="w-1/2 mt-10 rounded-lg shadow-lg shadow-black">
-            <img src="{{ asset('images/evans1.png') }}" alt="" class="w-1/2 mt-10 rounded-lg shadow-lg shadow-black">
+            <img src="{{ asset('images/evans.jpg') }}" alt="" class="w-1/2 mt-10 rounded-lg shadow-lg shadow-blackgrow grow-0">
+            <img src="{{ asset('images/evans2.jpg') }}" alt="" class="w-1/2 mt-10 rounded-lg shadow-lg shadow-blackgrow grow-0">
         </div>
     </div>
     <div class="w-5/6 px-2 py-2 mx-auto">
@@ -24,11 +24,11 @@
             dog bowls, Sawdust Traditions aims to please. Individual and personalized consultations are held over the
             phone, via email, or in-person to understand the customer's vision and bring it to life. If you are
             interested in a consultation, please submit the custom quote form and we will contact you to discuss your
-            idea.
+            idea.jpg
         </p>
         <div class="justify-center mt-5 mb-8 sm:flex sm:gap-2">
-            <img src="{{ asset('images/phill2.png') }}" alt="" class="block mx-auto my-4 rounded-lg shadow-lg sm:my-0 sm:flex-1 shadow-black sm:w-1/2">
-            <img src="{{ asset('images/phill1.png') }}" alt="" class="mx-auto rounded-lg shadow-lg sm:flex-1 shadow-black sm:w-1/2">
+            <img src="{{ asset('images/phill2.jpg') }}" alt="" class="flex-1 block w-1/2 mx-auto my-4 rounded-lg shadow-lg grow sm:my-0 shadow-black">
+            <img src="{{ asset('images/phil1.jpg') }}" alt="" class="mx-auto rounded-lg shadow-lg grow sm:flex-1 shadow-black sm:w-1/2">
         </div>
     </div>
 </div>
