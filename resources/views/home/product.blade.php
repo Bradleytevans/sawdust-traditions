@@ -4,7 +4,7 @@
     <x-layout>
 
         <div>
-            <a href="/gallery" class="relative flex items-center justify-center w-3/5 px-2 py-1 mx-auto text-lg font-semibold text-center bg-black bg-opacity-50 shadow-md lg:w-1/3 text-violet-50 shadow-black rounded-2xl">
+            <a href="/gallery" class="relative flex items-center justify-center w-3/5 px-2 py-1 mx-auto text-lg font-semibold text-center bg-black shadow-md bg-opacity-70 lg:w-1/3 text-violet-50 shadow-black rounded-2xl">
                 <i class="pr-2 fa-sharp fa-solid fa-arrow-left"></i>
 
                 Back to Products
@@ -12,7 +12,7 @@
         </div>
 
 
-        <main class="w-11/12 pt-2 mx-auto my-10 space-y-6 text-gray-200 bg-black shadow-md lg:w-2/3 lg:my-20 bg-opacity-70 shadow-black rounded-3xl">
+        <main class="w-11/12 pt-2 mx-auto my-10 space-y-6 text-gray-200 bg-black shadow-md xl:w-2/3 lg:my-20 bg-opacity-70 shadow-black rounded-3xl">
             <div class="px-5 py-6 mb-10 gap-x-4">
                 <div class="block">
                     <img src="/images/{{ $product->slug }}.jpg" alt="Blog Post illustration" class="mx-auto bg-black bg-opacity-50 rounded-xl">

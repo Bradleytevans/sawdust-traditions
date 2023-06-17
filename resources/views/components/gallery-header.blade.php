@@ -2,14 +2,9 @@
     <h1 class="my-12 text-6xl text-violet-50"><a href="/gallery">Gallery</a></h1>
 
     <div class="space-y-2">
-        <!--  Category -->
-        <div class="relative w-3/5 mx-auto text-sm font-semibold text-center bg-black bg-opacity-50 shadow-md lg:w-1/3 text-violet-50 shadow-black rounded-xl">
-            <x-category-dropdown></x-category-dropdown>
-        </div>
-
 
         <!-- Search -->
-        <form method="GET" action="/gallery/" class="justify-center  text-violet-50 bg-black bg-opacity-50 text-sm font-semibold focus:ring-transparent border-none !outline-none text-center shadow-black shadow-md rounded-xl lg:w-1/3 w-3/5 mx-auto relative">
+        <form method="GET" action="/gallery/" class="justify-center text-violet-50 bg-black bg-opacity-70 text-sm font-semibold focus:ring-transparent border-none !outline-none text-center shadow-black shadow-md rounded-xl lg:w-1/3 w-3/5 mx-auto relative">
             @if (request('category'))
             <input type="hidden" name="category" value="{{ request('category') }}">
             @endif
@@ -25,5 +20,10 @@
                 <input type="text" name="search" placeholder="Search..." class="justify-self-start underline bg-transparent text-md font-semibold placeholder-black focus:ring-transparent border-none !outline-none text-center placeholder:text-violet-50 w-1/3 overflow-visible" style="padding: 4px 0px;" value="{{ request('search') }}">
             </div>
         </form>
+
+        <!--  Category -->
+        <div class="relative w-3/5 mx-auto text-sm font-semibold text-center bg-black shadow-md bg-opacity-70 lg:w-1/3 text-violet-50 shadow-black rounded-xl">
+            <x-category-dropdown></x-category-dropdown>
+        </div>
 
 </header>
