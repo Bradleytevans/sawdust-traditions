@@ -1,5 +1,5 @@
 <div class="text-gray-200 bg-black shadow-md bg-opacity-70 shadow-black">
-    <div class="w-5/6 px-2 py-2 mx-auto ">
+    <div class="w-5/6 px-2 py-2 mx-auto lg:w-2/3 ">
         <h1 class="m-auto my-10 text-2xl text-gray-900 align-middle bg-white shadow-md shadow-black bg-opacity-60 text-semibold py-7 rounded-3xl">
             Experience & History
         </h1>
@@ -15,7 +15,7 @@
             <img src="{{ asset('images/evans2.jpg') }}" alt="" class="w-1/2 mt-10 rounded-lg shadow-lg shadow-blackgrow grow-0">
         </div>
     </div>
-    <div class="w-5/6 px-2 py-2 mx-auto">
+    <div class="w-5/6 px-2 py-2 mx-auto lg:w-2/3">
         <h1 class="m-auto my-10 text-2xl text-gray-900 align-middle bg-white shadow-md shadow-black bg-opacity-60 text-semibold py-7 rounded-3xl">
             Our Process
         </h1>
