@@ -1,5 +1,5 @@
 <div class="text-white bg-black shadow-md bg-opacity-70 shadow-black">
-    <div class="flex-1 w-5/6 p-2 mx-auto lg:w-2/3">
+    <div class="flex-1 w-5/6 p-2 mx-auto xl:w-2/3">
         <h4 class="m-auto my-10 text-2xl text-gray-900 align-middle bg-white shadow-md shadow-black bg-opacity-60 text-semibold py-7 rounded-3xl">
             What We
             Do</h4>

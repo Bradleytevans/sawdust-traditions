@@ -43,7 +43,7 @@
 <article {{ $attributes->merge(['class' => 'bg-black bg-opacity-70 text-gray-200 pt-2 mb-6 shadow-black shadow-md rounded-2xl lg:hidden']) }}>
     <div class="px-5 py-6">
         <div class="">
-            <img src="/images/{{ $product->slug }}.jpg" alt="Blog Post illustration" class="bg-black bg-opacity-50 rounded-xl">
+            <img src="/images/{{ $product->slug }}.jpg" alt="Blog Post illustration" class="mx-auto bg-black bg-opacity-50 rounded-xl">
         </div>
 
         <div class="flex flex-col justify-end mt-8">
